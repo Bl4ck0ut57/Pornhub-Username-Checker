@@ -47,12 +47,12 @@ class MAIN:
                     self.usernames.append(line)
                 if len(self.usernames) == 0:
                     self.safeprint(ape)
-                    print(Fore.RED + f"\a\n\t\t{l}[!] {w}Usernames file is empty, please put in lines.")
+                    print(Fore.RED + f"\a\n\t\t{l}[!] 
                     input(); quit()
         else:
             open ("usernames.txt", "x")
             self.safeprint(ape)
-            print(Fore.RED + f"\a\n\t\t{l}[!] {w}Usernames file is empty, please put lines in.")
+            print(Fore.RED + f"\a\n\t\t{l}[!] 
             input(), quit()
 
     def loadproxies(self): 
@@ -63,12 +63,12 @@ class MAIN:
                     proxies.append(line)
                 if len(proxies) == 0:
                     self.safeprint(ape)
-                    print(Fore.RED + f"\a\n\t\t{l}[!] {w}Proxies file is empty, please put in proxies.")
+                    print(Fore.RED + f"\a\n\t\t{l}[!]
                     input(Fore.BLACK + "\t\t" + Fore.BLACK); quit()
         else:
             open ("proxies.txt", "x")
             self.safeprint(ape)
-            print(Fore.RED + f"\a\n\t\t{l}[!] {w}Proxies file is empty, please put in proxies.")
+            print(Fore.RED + f"\a\n\t\t{l}[!] 
             input(Fore.BLACK + "\t\t" + Fore.BLACK); quit()
 
     def Threads(self):
@@ -90,7 +90,7 @@ class MAIN:
         try:
             if len(username) <= 6:
                 return
-            url = f"https://www.pornhub.com/users/{username}"
+            url = f"https://www.pornhub.com/users/{blackout57}"
             proxiess = {"http":f"http://{proxy}","https":f"http://{proxy}"}
             r = self.session.get(url,proxies=proxiess)
             if 'Error Page Not Found' in r.text:
